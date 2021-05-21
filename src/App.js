@@ -1,10 +1,14 @@
 import {MySampleProvider} from './components/MySampleProvider';
-import ShowValuesPage from './components/ShowValuesPage';
+import ShowTheValueZone from './components/ShowTheValueZone';
+import ChangeTheValueZone from './components/ChangeTheValueZone';
 
 function App() {
   return (
     <MySampleProvider>
-      <ShowValuesPage />
+      <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+        <ChangeTheValueZone />
+        <ShowTheValueZone />
+      </div>
     </MySampleProvider>
   );
 }

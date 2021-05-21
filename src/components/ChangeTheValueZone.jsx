@@ -1,14 +1,11 @@
 import React, { useContext } from 'react';
 import { MySampleContext } from './MySampleProvider';
 
-const ShowValuesPage = () => {
-  const { aaa, setAaa } = useContext(MySampleContext);
+const ChangeTheValueZone = () => {
+  const { setAaa } = useContext(MySampleContext);
 
   return (
-    <div>
-      <h1>
-        Value of aaa: <span style={{color: 'red'}}>{aaa}</span>
-      </h1>
+    <div style={{margin: 20}}>
       Enter a new value here:{' '}
       <input
         type='text'
@@ -21,4 +18,4 @@ const ShowValuesPage = () => {
   );
 };
 
-export default ShowValuesPage;
+export default ChangeTheValueZone;
